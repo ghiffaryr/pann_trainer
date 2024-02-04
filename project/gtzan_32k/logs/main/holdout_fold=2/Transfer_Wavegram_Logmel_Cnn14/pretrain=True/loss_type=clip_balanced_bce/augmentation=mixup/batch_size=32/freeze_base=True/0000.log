@@ -1,0 +1,298 @@
+Sun, 04 Feb 2024 18:12:58 main.py[line:68] INFO Namespace(augmentation='mixup', batch_size=32, cuda=True, dataset_dir='/mnt/c/Ghiffary/Project/panns_trainer/project/gtzan_32k/dataset', filename='main', freeze_base=True, holdout_fold='2', learning_rate=1e-07, loss_type='clip_balanced_bce', mode='train', model_type='Transfer_Wavegram_Logmel_Cnn14', pretrained_checkpoint_path='/mnt/c/Ghiffary/Project/panns_trainer/pretrained_model/Wavegram_Logmel_Cnn14_mAP=0.439.pth', resume_iteration=0, stop_iteration=50000, workspace='/mnt/c/Ghiffary/Project/panns_trainer/project/gtzan_32k')
+Sun, 04 Feb 2024 18:12:58 main.py[line:71] INFO Using GPU.
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:76] DEBUG bytecode dump:
+>          0	NOP(arg=None, lineno=1051)
+           2	LOAD_FAST(arg=0, lineno=1054)
+           4	LOAD_CONST(arg=1, lineno=1054)
+           6	BINARY_SUBSCR(arg=None, lineno=1054)
+           8	LOAD_FAST(arg=0, lineno=1054)
+          10	LOAD_CONST(arg=2, lineno=1054)
+          12	BINARY_SUBSCR(arg=None, lineno=1054)
+          14	COMPARE_OP(arg=4, lineno=1054)
+          16	LOAD_FAST(arg=0, lineno=1054)
+          18	LOAD_CONST(arg=1, lineno=1054)
+          20	BINARY_SUBSCR(arg=None, lineno=1054)
+          22	LOAD_FAST(arg=0, lineno=1054)
+          24	LOAD_CONST(arg=3, lineno=1054)
+          26	BINARY_SUBSCR(arg=None, lineno=1054)
+          28	COMPARE_OP(arg=5, lineno=1054)
+          30	BINARY_AND(arg=None, lineno=1054)
+          32	RETURN_VALUE(arg=None, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:102] DEBUG pending: deque([State(pc_initial=0 nstack_initial=0)])
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:105] DEBUG stack: []
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:106] DEBUG state.pc_initial: State(pc_initial=0 nstack_initial=0)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=0, inst=NOP(arg=None, lineno=1051)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack []
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=2, inst=LOAD_FAST(arg=0, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack []
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=4, inst=LOAD_CONST(arg=1, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$x2.0']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=6, inst=BINARY_SUBSCR(arg=None, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$x2.0', '$const4.1']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=8, inst=LOAD_FAST(arg=0, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$6binary_subscr.2']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=10, inst=LOAD_CONST(arg=2, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$6binary_subscr.2', '$x8.3']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=12, inst=BINARY_SUBSCR(arg=None, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$6binary_subscr.2', '$x8.3', '$const10.4']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=14, inst=COMPARE_OP(arg=4, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$6binary_subscr.2', '$12binary_subscr.5']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=16, inst=LOAD_FAST(arg=0, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$14compare_op.6']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=18, inst=LOAD_CONST(arg=1, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$14compare_op.6', '$x16.7']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=20, inst=BINARY_SUBSCR(arg=None, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$14compare_op.6', '$x16.7', '$const18.8']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=22, inst=LOAD_FAST(arg=0, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$14compare_op.6', '$20binary_subscr.9']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=24, inst=LOAD_CONST(arg=3, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$14compare_op.6', '$20binary_subscr.9', '$x22.10']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=26, inst=BINARY_SUBSCR(arg=None, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$14compare_op.6', '$20binary_subscr.9', '$x22.10', '$const24.11']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=28, inst=COMPARE_OP(arg=5, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$14compare_op.6', '$20binary_subscr.9', '$26binary_subscr.12']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=30, inst=BINARY_AND(arg=None, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$14compare_op.6', '$28compare_op.13']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=32, inst=RETURN_VALUE(arg=None, lineno=1054)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$30binary_and.14']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:124] DEBUG end state. edges=[]
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:205] DEBUG -------------------------Prune PHIs-------------------------
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:274] DEBUG Used_phis: defaultdict(<class 'set'>, {State(pc_initial=0 nstack_initial=0): set()})
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:231] DEBUG defmap: {}
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:232] DEBUG phismap: defaultdict(<class 'set'>, {})
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:253] DEBUG changing phismap: defaultdict(<class 'set'>, {})
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:262] DEBUG keep phismap: {}
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:268] DEBUG new_out: defaultdict(<class 'dict'>, {})
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:278] DEBUG ----------------------DONE Prune PHIs-----------------------
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:136] DEBUG block_infos State(pc_initial=0 nstack_initial=0):
+AdaptBlockInfo(insts=((0, {}), (2, {'res': '$x2.0'}), (4, {'res': '$const4.1'}), (6, {'index': '$const4.1', 'target': '$x2.0', 'res': '$6binary_subscr.2'}), (8, {'res': '$x8.3'}), (10, {'res': '$const10.4'}), (12, {'index': '$const10.4', 'target': '$x8.3', 'res': '$12binary_subscr.5'}), (14, {'lhs': '$6binary_subscr.2', 'rhs': '$12binary_subscr.5', 'res': '$14compare_op.6'}), (16, {'res': '$x16.7'}), (18, {'res': '$const18.8'}), (20, {'index': '$const18.8', 'target': '$x16.7', 'res': '$20binary_subscr.9'}), (22, {'res': '$x22.10'}), (24, {'res': '$const24.11'}), (26, {'index': '$const24.11', 'target': '$x22.10', 'res': '$26binary_subscr.12'}), (28, {'lhs': '$20binary_subscr.9', 'rhs': '$26binary_subscr.12', 'res': '$28compare_op.13'}), (30, {'lhs': '$14compare_op.6', 'rhs': '$28compare_op.13', 'res': '$30binary_and.14'}), (32, {'retval': '$30binary_and.14', 'castval': '$32return_value.15'})), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={})
+Sun, 04 Feb 2024 18:12:58 interpreter.py[line:1390] DEBUG label 0:
+    x = arg(0, name=x)                       ['x']
+    $const4.1 = const(int, 0)                ['$const4.1']
+    $6binary_subscr.2 = getitem(value=x, index=$const4.1, fn=<built-in function getitem>) ['$6binary_subscr.2', '$const4.1', 'x']
+    $const10.4 = const(int, -1)              ['$const10.4']
+    $12binary_subscr.5 = getitem(value=x, index=$const10.4, fn=<built-in function getitem>) ['$12binary_subscr.5', '$const10.4', 'x']
+    $14compare_op.6 = $6binary_subscr.2 > $12binary_subscr.5 ['$12binary_subscr.5', '$14compare_op.6', '$6binary_subscr.2']
+    $const18.8 = const(int, 0)               ['$const18.8']
+    $20binary_subscr.9 = getitem(value=x, index=$const18.8, fn=<built-in function getitem>) ['$20binary_subscr.9', '$const18.8', 'x']
+    $const24.11 = const(int, 1)              ['$const24.11']
+    $26binary_subscr.12 = getitem(value=x, index=$const24.11, fn=<built-in function getitem>) ['$26binary_subscr.12', '$const24.11', 'x']
+    $28compare_op.13 = $20binary_subscr.9 >= $26binary_subscr.12 ['$20binary_subscr.9', '$26binary_subscr.12', '$28compare_op.13']
+    $30binary_and.14 = $14compare_op.6 & $28compare_op.13 ['$14compare_op.6', '$28compare_op.13', '$30binary_and.14']
+    $32return_value.15 = cast(value=$30binary_and.14) ['$30binary_and.14', '$32return_value.15']
+    return $32return_value.15                ['$32return_value.15']
+
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:76] DEBUG bytecode dump:
+>          0	NOP(arg=None, lineno=1057)
+           2	LOAD_FAST(arg=0, lineno=1060)
+           4	LOAD_CONST(arg=1, lineno=1060)
+           6	BINARY_SUBSCR(arg=None, lineno=1060)
+           8	LOAD_FAST(arg=0, lineno=1060)
+          10	LOAD_CONST(arg=2, lineno=1060)
+          12	BINARY_SUBSCR(arg=None, lineno=1060)
+          14	COMPARE_OP(arg=0, lineno=1060)
+          16	LOAD_FAST(arg=0, lineno=1060)
+          18	LOAD_CONST(arg=1, lineno=1060)
+          20	BINARY_SUBSCR(arg=None, lineno=1060)
+          22	LOAD_FAST(arg=0, lineno=1060)
+          24	LOAD_CONST(arg=3, lineno=1060)
+          26	BINARY_SUBSCR(arg=None, lineno=1060)
+          28	COMPARE_OP(arg=1, lineno=1060)
+          30	BINARY_AND(arg=None, lineno=1060)
+          32	RETURN_VALUE(arg=None, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:102] DEBUG pending: deque([State(pc_initial=0 nstack_initial=0)])
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:105] DEBUG stack: []
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:106] DEBUG state.pc_initial: State(pc_initial=0 nstack_initial=0)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=0, inst=NOP(arg=None, lineno=1057)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack []
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=2, inst=LOAD_FAST(arg=0, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack []
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=4, inst=LOAD_CONST(arg=1, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$x2.0']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=6, inst=BINARY_SUBSCR(arg=None, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$x2.0', '$const4.1']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=8, inst=LOAD_FAST(arg=0, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$6binary_subscr.2']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=10, inst=LOAD_CONST(arg=2, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$6binary_subscr.2', '$x8.3']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=12, inst=BINARY_SUBSCR(arg=None, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$6binary_subscr.2', '$x8.3', '$const10.4']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=14, inst=COMPARE_OP(arg=0, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$6binary_subscr.2', '$12binary_subscr.5']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=16, inst=LOAD_FAST(arg=0, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$14compare_op.6']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=18, inst=LOAD_CONST(arg=1, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$14compare_op.6', '$x16.7']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=20, inst=BINARY_SUBSCR(arg=None, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$14compare_op.6', '$x16.7', '$const18.8']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=22, inst=LOAD_FAST(arg=0, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$14compare_op.6', '$20binary_subscr.9']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=24, inst=LOAD_CONST(arg=3, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$14compare_op.6', '$20binary_subscr.9', '$x22.10']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=26, inst=BINARY_SUBSCR(arg=None, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$14compare_op.6', '$20binary_subscr.9', '$x22.10', '$const24.11']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=28, inst=COMPARE_OP(arg=1, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$14compare_op.6', '$20binary_subscr.9', '$26binary_subscr.12']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=30, inst=BINARY_AND(arg=None, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$14compare_op.6', '$28compare_op.13']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:333] DEBUG dispatch pc=32, inst=RETURN_VALUE(arg=None, lineno=1060)
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:334] DEBUG stack ['$30binary_and.14']
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:124] DEBUG end state. edges=[]
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:205] DEBUG -------------------------Prune PHIs-------------------------
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:274] DEBUG Used_phis: defaultdict(<class 'set'>, {State(pc_initial=0 nstack_initial=0): set()})
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:231] DEBUG defmap: {}
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:232] DEBUG phismap: defaultdict(<class 'set'>, {})
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:253] DEBUG changing phismap: defaultdict(<class 'set'>, {})
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:262] DEBUG keep phismap: {}
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:268] DEBUG new_out: defaultdict(<class 'dict'>, {})
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:278] DEBUG ----------------------DONE Prune PHIs-----------------------
+Sun, 04 Feb 2024 18:12:58 byteflow.py[line:136] DEBUG block_infos State(pc_initial=0 nstack_initial=0):
+AdaptBlockInfo(insts=((0, {}), (2, {'res': '$x2.0'}), (4, {'res': '$const4.1'}), (6, {'index': '$const4.1', 'target': '$x2.0', 'res': '$6binary_subscr.2'}), (8, {'res': '$x8.3'}), (10, {'res': '$const10.4'}), (12, {'index': '$const10.4', 'target': '$x8.3', 'res': '$12binary_subscr.5'}), (14, {'lhs': '$6binary_subscr.2', 'rhs': '$12binary_subscr.5', 'res': '$14compare_op.6'}), (16, {'res': '$x16.7'}), (18, {'res': '$const18.8'}), (20, {'index': '$const18.8', 'target': '$x16.7', 'res': '$20binary_subscr.9'}), (22, {'res': '$x22.10'}), (24, {'res': '$const24.11'}), (26, {'index': '$const24.11', 'target': '$x22.10', 'res': '$26binary_subscr.12'}), (28, {'lhs': '$20binary_subscr.9', 'rhs': '$26binary_subscr.12', 'res': '$28compare_op.13'}), (30, {'lhs': '$14compare_op.6', 'rhs': '$28compare_op.13', 'res': '$30binary_and.14'}), (32, {'retval': '$30binary_and.14', 'castval': '$32return_value.15'})), outgoing_phis={}, blockstack=(), active_try_block=None, outgoing_edgepushed={})
+Sun, 04 Feb 2024 18:12:58 interpreter.py[line:1390] DEBUG label 0:
+    x = arg(0, name=x)                       ['x']
+    $const4.1 = const(int, 0)                ['$const4.1']
+    $6binary_subscr.2 = getitem(value=x, index=$const4.1, fn=<built-in function getitem>) ['$6binary_subscr.2', '$const4.1', 'x']
+    $const10.4 = const(int, -1)              ['$const10.4']
+    $12binary_subscr.5 = getitem(value=x, index=$const10.4, fn=<built-in function getitem>) ['$12binary_subscr.5', '$const10.4', 'x']
+    $14compare_op.6 = $6binary_subscr.2 < $12binary_subscr.5 ['$12binary_subscr.5', '$14compare_op.6', '$6binary_subscr.2']
+    $const18.8 = const(int, 0)               ['$const18.8']
+    $20binary_subscr.9 = getitem(value=x, index=$const18.8, fn=<built-in function getitem>) ['$20binary_subscr.9', '$const18.8', 'x']
+    $const24.11 = const(int, 1)              ['$const24.11']
+    $26binary_subscr.12 = getitem(value=x, index=$const24.11, fn=<built-in function getitem>) ['$26binary_subscr.12', '$const24.11', 'x']
+    $28compare_op.13 = $20binary_subscr.9 <= $26binary_subscr.12 ['$20binary_subscr.9', '$26binary_subscr.12', '$28compare_op.13']
+    $30binary_and.14 = $14compare_op.6 & $28compare_op.13 ['$14compare_op.6', '$28compare_op.13', '$30binary_and.14']
+    $32return_value.15 = cast(value=$30binary_and.14) ['$30binary_and.14', '$32return_value.15']
+    return $32return_value.15                ['$32return_value.15']
+
+Sun, 04 Feb 2024 18:12:59 main.py[line:90] INFO Load pretrained model from /mnt/c/Ghiffary/Project/panns_trainer/pretrained_model/Wavegram_Logmel_Cnn14_mAP=0.439.pth
+Sun, 04 Feb 2024 18:13:12 main.py[line:152] INFO ------------------------------------
+Sun, 04 Feb 2024 18:13:12 main.py[line:153] INFO Iteration: 100
+Sun, 04 Feb 2024 18:13:13 main.py[line:158] INFO Validate accuracy: 0.818
+Sun, 04 Feb 2024 18:13:13 main.py[line:159] INFO Validate balanced accuracy: 0.49444444444444435
+Sun, 04 Feb 2024 18:13:13 main.py[line:160] INFO Validate precision: nan
+Sun, 04 Feb 2024 18:13:13 main.py[line:161] INFO Validate recall: 0.09
+Sun, 04 Feb 2024 18:13:13 main.py[line:162] INFO Validate f1: nan
+Sun, 04 Feb 2024 18:13:13 main.py[line:163] INFO Validate jaccard: 0.041358543417366944
+Sun, 04 Feb 2024 18:13:13 main.py[line:165] INFO Validate blues cm: [[90  0]
+ [10  0]]
+Sun, 04 Feb 2024 18:13:13 main.py[line:166] INFO Validate blues tn: 90
+Sun, 04 Feb 2024 18:13:13 main.py[line:167] INFO Validate blues fp: 0
+Sun, 04 Feb 2024 18:13:13 main.py[line:168] INFO Validate blues fn: 10
+Sun, 04 Feb 2024 18:13:13 main.py[line:169] INFO Validate blues tp: 0
+Sun, 04 Feb 2024 18:13:13 main.py[line:170] INFO Validate blues accuracy: 0.9
+Sun, 04 Feb 2024 18:13:13 main.py[line:171] INFO Validate blues balanced accuracy: 0.5
+Sun, 04 Feb 2024 18:13:13 main.py[line:172] INFO Validate blues precision: nan
+Sun, 04 Feb 2024 18:13:13 main.py[line:173] INFO Validate blues recall: 0.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:174] INFO Validate blues f1: nan
+Sun, 04 Feb 2024 18:13:13 main.py[line:175] INFO Validate blues jaccard: 0.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:165] INFO Validate classical cm: [[81  9]
+ [10  0]]
+Sun, 04 Feb 2024 18:13:13 main.py[line:166] INFO Validate classical tn: 81
+Sun, 04 Feb 2024 18:13:13 main.py[line:167] INFO Validate classical fp: 9
+Sun, 04 Feb 2024 18:13:13 main.py[line:168] INFO Validate classical fn: 10
+Sun, 04 Feb 2024 18:13:13 main.py[line:169] INFO Validate classical tp: 0
+Sun, 04 Feb 2024 18:13:13 main.py[line:170] INFO Validate classical accuracy: 0.81
+Sun, 04 Feb 2024 18:13:13 main.py[line:171] INFO Validate classical balanced accuracy: 0.45
+Sun, 04 Feb 2024 18:13:13 main.py[line:172] INFO Validate classical precision: 0.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:173] INFO Validate classical recall: 0.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:174] INFO Validate classical f1: nan
+Sun, 04 Feb 2024 18:13:13 main.py[line:175] INFO Validate classical jaccard: 0.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:165] INFO Validate country cm: [[85  5]
+ [10  0]]
+Sun, 04 Feb 2024 18:13:13 main.py[line:166] INFO Validate country tn: 85
+Sun, 04 Feb 2024 18:13:13 main.py[line:167] INFO Validate country fp: 5
+Sun, 04 Feb 2024 18:13:13 main.py[line:168] INFO Validate country fn: 10
+Sun, 04 Feb 2024 18:13:13 main.py[line:169] INFO Validate country tp: 0
+Sun, 04 Feb 2024 18:13:13 main.py[line:170] INFO Validate country accuracy: 0.85
+Sun, 04 Feb 2024 18:13:13 main.py[line:171] INFO Validate country balanced accuracy: 0.4722222222222222
+Sun, 04 Feb 2024 18:13:13 main.py[line:172] INFO Validate country precision: 0.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:173] INFO Validate country recall: 0.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:174] INFO Validate country f1: nan
+Sun, 04 Feb 2024 18:13:13 main.py[line:175] INFO Validate country jaccard: 0.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:165] INFO Validate disco cm: [[88  2]
+ [10  0]]
+Sun, 04 Feb 2024 18:13:13 main.py[line:166] INFO Validate disco tn: 88
+Sun, 04 Feb 2024 18:13:13 main.py[line:167] INFO Validate disco fp: 2
+Sun, 04 Feb 2024 18:13:13 main.py[line:168] INFO Validate disco fn: 10
+Sun, 04 Feb 2024 18:13:13 main.py[line:169] INFO Validate disco tp: 0
+Sun, 04 Feb 2024 18:13:13 main.py[line:170] INFO Validate disco accuracy: 0.88
+Sun, 04 Feb 2024 18:13:13 main.py[line:171] INFO Validate disco balanced accuracy: 0.4888888888888889
+Sun, 04 Feb 2024 18:13:13 main.py[line:172] INFO Validate disco precision: 0.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:173] INFO Validate disco recall: 0.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:174] INFO Validate disco f1: nan
+Sun, 04 Feb 2024 18:13:13 main.py[line:175] INFO Validate disco jaccard: 0.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:165] INFO Validate hiphop cm: [[84  6]
+ [10  0]]
+Sun, 04 Feb 2024 18:13:13 main.py[line:166] INFO Validate hiphop tn: 84
+Sun, 04 Feb 2024 18:13:13 main.py[line:167] INFO Validate hiphop fp: 6
+Sun, 04 Feb 2024 18:13:13 main.py[line:168] INFO Validate hiphop fn: 10
+Sun, 04 Feb 2024 18:13:13 main.py[line:169] INFO Validate hiphop tp: 0
+Sun, 04 Feb 2024 18:13:13 main.py[line:170] INFO Validate hiphop accuracy: 0.84
+Sun, 04 Feb 2024 18:13:13 main.py[line:171] INFO Validate hiphop balanced accuracy: 0.4666666666666667
+Sun, 04 Feb 2024 18:13:13 main.py[line:172] INFO Validate hiphop precision: 0.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:173] INFO Validate hiphop recall: 0.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:174] INFO Validate hiphop f1: nan
+Sun, 04 Feb 2024 18:13:13 main.py[line:175] INFO Validate hiphop jaccard: 0.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:165] INFO Validate jazz cm: [[90  0]
+ [10  0]]
+Sun, 04 Feb 2024 18:13:13 main.py[line:166] INFO Validate jazz tn: 90
+Sun, 04 Feb 2024 18:13:13 main.py[line:167] INFO Validate jazz fp: 0
+Sun, 04 Feb 2024 18:13:13 main.py[line:168] INFO Validate jazz fn: 10
+Sun, 04 Feb 2024 18:13:13 main.py[line:169] INFO Validate jazz tp: 0
+Sun, 04 Feb 2024 18:13:13 main.py[line:170] INFO Validate jazz accuracy: 0.9
+Sun, 04 Feb 2024 18:13:13 main.py[line:171] INFO Validate jazz balanced accuracy: 0.5
+Sun, 04 Feb 2024 18:13:13 main.py[line:172] INFO Validate jazz precision: nan
+Sun, 04 Feb 2024 18:13:13 main.py[line:173] INFO Validate jazz recall: 0.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:174] INFO Validate jazz f1: nan
+Sun, 04 Feb 2024 18:13:13 main.py[line:175] INFO Validate jazz jaccard: 0.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:165] INFO Validate metal cm: [[83  7]
+ [ 9  1]]
+Sun, 04 Feb 2024 18:13:13 main.py[line:166] INFO Validate metal tn: 83
+Sun, 04 Feb 2024 18:13:13 main.py[line:167] INFO Validate metal fp: 7
+Sun, 04 Feb 2024 18:13:13 main.py[line:168] INFO Validate metal fn: 9
+Sun, 04 Feb 2024 18:13:13 main.py[line:169] INFO Validate metal tp: 1
+Sun, 04 Feb 2024 18:13:13 main.py[line:170] INFO Validate metal accuracy: 0.84
+Sun, 04 Feb 2024 18:13:13 main.py[line:171] INFO Validate metal balanced accuracy: 0.5111111111111112
+Sun, 04 Feb 2024 18:13:13 main.py[line:172] INFO Validate metal precision: 0.125
+Sun, 04 Feb 2024 18:13:13 main.py[line:173] INFO Validate metal recall: 0.1
+Sun, 04 Feb 2024 18:13:13 main.py[line:174] INFO Validate metal f1: 0.11111111111111112
+Sun, 04 Feb 2024 18:13:13 main.py[line:175] INFO Validate metal jaccard: 0.058823529411764705
+Sun, 04 Feb 2024 18:13:13 main.py[line:165] INFO Validate pop cm: [[88  2]
+ [ 9  1]]
+Sun, 04 Feb 2024 18:13:13 main.py[line:166] INFO Validate pop tn: 88
+Sun, 04 Feb 2024 18:13:13 main.py[line:167] INFO Validate pop fp: 2
+Sun, 04 Feb 2024 18:13:13 main.py[line:168] INFO Validate pop fn: 9
+Sun, 04 Feb 2024 18:13:13 main.py[line:169] INFO Validate pop tp: 1
+Sun, 04 Feb 2024 18:13:13 main.py[line:170] INFO Validate pop accuracy: 0.89
+Sun, 04 Feb 2024 18:13:13 main.py[line:171] INFO Validate pop balanced accuracy: 0.5388888888888889
+Sun, 04 Feb 2024 18:13:13 main.py[line:172] INFO Validate pop precision: 0.3333333333333333
+Sun, 04 Feb 2024 18:13:13 main.py[line:173] INFO Validate pop recall: 0.1
+Sun, 04 Feb 2024 18:13:13 main.py[line:174] INFO Validate pop f1: 0.15384615384615383
+Sun, 04 Feb 2024 18:13:13 main.py[line:175] INFO Validate pop jaccard: 0.08333333333333333
+Sun, 04 Feb 2024 18:13:13 main.py[line:165] INFO Validate reggae cm: [[30 60]
+ [ 5  5]]
+Sun, 04 Feb 2024 18:13:13 main.py[line:166] INFO Validate reggae tn: 30
+Sun, 04 Feb 2024 18:13:13 main.py[line:167] INFO Validate reggae fp: 60
+Sun, 04 Feb 2024 18:13:13 main.py[line:168] INFO Validate reggae fn: 5
+Sun, 04 Feb 2024 18:13:13 main.py[line:169] INFO Validate reggae tp: 5
+Sun, 04 Feb 2024 18:13:13 main.py[line:170] INFO Validate reggae accuracy: 0.35
+Sun, 04 Feb 2024 18:13:13 main.py[line:171] INFO Validate reggae balanced accuracy: 0.41666666666666663
+Sun, 04 Feb 2024 18:13:13 main.py[line:172] INFO Validate reggae precision: 0.07692307692307693
+Sun, 04 Feb 2024 18:13:13 main.py[line:173] INFO Validate reggae recall: 0.5
+Sun, 04 Feb 2024 18:13:13 main.py[line:174] INFO Validate reggae f1: 0.13333333333333336
+Sun, 04 Feb 2024 18:13:13 main.py[line:175] INFO Validate reggae jaccard: 0.07142857142857142
+Sun, 04 Feb 2024 18:13:13 main.py[line:165] INFO Validate rock cm: [[90  0]
+ [ 8  2]]
+Sun, 04 Feb 2024 18:13:13 main.py[line:166] INFO Validate rock tn: 90
+Sun, 04 Feb 2024 18:13:13 main.py[line:167] INFO Validate rock fp: 0
+Sun, 04 Feb 2024 18:13:13 main.py[line:168] INFO Validate rock fn: 8
+Sun, 04 Feb 2024 18:13:13 main.py[line:169] INFO Validate rock tp: 2
+Sun, 04 Feb 2024 18:13:13 main.py[line:170] INFO Validate rock accuracy: 0.92
+Sun, 04 Feb 2024 18:13:13 main.py[line:171] INFO Validate rock balanced accuracy: 0.6
+Sun, 04 Feb 2024 18:13:13 main.py[line:172] INFO Validate rock precision: 1.0
+Sun, 04 Feb 2024 18:13:13 main.py[line:173] INFO Validate rock recall: 0.2
+Sun, 04 Feb 2024 18:13:13 main.py[line:174] INFO Validate rock f1: 0.33333333333333337
+Sun, 04 Feb 2024 18:13:13 main.py[line:175] INFO Validate rock jaccard: 0.2
+Sun, 04 Feb 2024 18:13:13 utilities.py[line:103] INFO     Dump statistics to /mnt/c/Ghiffary/Project/panns_trainer/project/gtzan_32k/statistics/main/holdout_fold=2/Transfer_Wavegram_Logmel_Cnn14/pretrain=True/loss_type=clip_balanced_bce/augmentation=mixup/batch_size=32/freeze_base=True/statistics.pickle
+Sun, 04 Feb 2024 18:13:13 utilities.py[line:104] INFO     Dump statistics to /mnt/c/Ghiffary/Project/panns_trainer/project/gtzan_32k/statistics/main/holdout_fold=2/Transfer_Wavegram_Logmel_Cnn14/pretrain=True/loss_type=clip_balanced_bce/augmentation=mixup/batch_size=32/freeze_base=True/statistics_2024-02-04_18-12-59.pkl
+Sun, 04 Feb 2024 18:13:13 main.py[line:183] INFO Train time: 9.341 s, validate time: 0.887 s
