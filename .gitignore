@@ -3,9 +3,4 @@
 !*.*
 *.hdf5
 *.pyc
-*.wav
-*.pth
-*.h5
-*.pkl
-*.pickle
 __pycache__
